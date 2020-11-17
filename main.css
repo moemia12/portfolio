@@ -20,7 +20,7 @@ html {
 body{
     width: 100%;
     height: 100%;
-    background: url("images/sitebg.jpg") no-repeat center fixed;
+    background: url("portfolio-images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -322,7 +322,7 @@ li{
     width: 10rem;
     height: 10rem;
     border: 3px solid #ffe738;
-    background-color: #fd57bf;
+    background-color: #1d0169;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
@@ -391,6 +391,7 @@ margin-right: auto;
     text-transform: uppercase;
     color: #3883ff;
     transition: color 650ms;
+    margin-right: rem;
 }
 
 .portfolio-description .cta:hover{
@@ -566,7 +567,7 @@ input[type="submit"]:hover{
 
 @media screen and (max-width: 768px){
     body{
-        background: url("images/sitebg2.jpg") no-repeat center fixed;
+        background: url("portfolio-images/sitebg2.jpg") no-repeat center fixed;
         background-size: cover;
     
     }

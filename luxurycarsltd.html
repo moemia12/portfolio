@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luxury Cars Limited</title>
+    <!--AOS Animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="luxurycars.css">
+    
+</head>
+<body>
+<!--NAVIGATION BUTTONS & ITEMS-->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="websitelogo">
+                    <a href="index.html">
+                        <img src="images/logo new.png" alt="">
+                    </a>
+                </div>
+
+<!-- Navigation Link (Dropdown menu)-->
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+<!-- Navigation Items-->
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+
+                    <li class="nav-item">
+                        <a href="Luxurycarsltd.html" class="nav-link current">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ourcars.html" class="nav-link">Our Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="back-to-main">
+               <a href="/portfolio/index.html">back to momia.co</a>
+            </div>
+        </div>
+    </header>
+
+<main>
+<!--HOMEPAGE PARAGRAPH & BOOK NOW BUTTON-->
+    <section class="opening-paragraph">
+        <div class="container">
+            <div class="main-message">
+                <h3>Experience</h3>
+                <h1></h1>
+                <p>    ​
+                Ferrari, Lamborghini, Porsche, Aston Martin, Bentley and Range Rover. All names that are synonymous with the ultimate driving experience. 
+                Precision engineering, power and cornering agility all combine to create the most exciting and thrilling driving experiences imaginable and they can be yours when you hire a prestige car, luxury car or supercar from the Luxury Cars fleet.​
+                </p>
+                <div class="cta">
+                    <a href="Luxurycarsltd.html" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--LATEST CARS IMAGE GRID-->
+
+    <section class="car-grid-container">
+        <div class="container">
+            <div class="title-heading" data-aos="fade-down" data-aos-delay="300">
+                <h3>Experience</h3>
+                <h1>Luxury at its finest</h1>
+                <p>Welcome to Luxury Cars Knightsbridge, your personal concierge service for all things luxury in travel!</p>
+            </div>
+
+            <div class="car-grid">
+
+            <!--grid item #1-->
+            <div class="activities-grid-item white-bentley" data-aos="fade-right" data-aos-delay="300">
+                <a href="#" id="image-button-whitebentley" class="image-button">
+                <img src="images/White Bentley.JPG" alt="">
+                </a>
+            </div> 
+             <!--grid item #2-->
+            <div class="activities-grid-item bluesvr" data-aos="fade-down" data-aos-delay="300">
+                <a href="#" id="image-button-bluesvr" class="image-button">
+                <img src="images/Blue SVR.JPG" alt="">
+                </a>
+            </div> 
+             <!--grid item #3 -->
+            <div class="activities-grid-item whites63" data-aos="fade-left" data-aos-delay="300">
+                <a href="#" id="image-button-whites63" class="image-button">
+                <img src="images/White S63.JPG" alt="">
+                </a>
+            </div> 
+             <!--grid item #4-->
+            <div class="activities-grid-item blackbentley" data-aos="fade-right" data-aos-delay="300">   
+                <a href="#" id="image-button-blackbentley" class="image-button"> 
+                <img src="images/Black Bentley.JPG" alt="">
+                </a>
+            </div> 
+             <!--grid item #5-->
+             <div class="activities-grid-item whiterange" data-aos="fade-up" data-aos-delay="300">
+                <a href="#" id="image-button-whiterange" class="image-button">  
+                <img src="images/White Range.JPG" alt="">
+                </a>
+            </div> 
+             <!--grid item #6-->
+             <div class="activities-grid-item orangebentley" data-aos="fade-left" data-aos-delay="300">
+                <a href="#" id="image-button-orangebentley" class="image-button">  
+                <img src="images/Orange bentley.JPG" alt="">
+                </a>
+             </div> 
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--Popup box-->
+    
+    <div class="bg-modal-whitebentley">
+        <div class="modal-content-whitebentley">
+            <span class="close-btn-whitebentley">&times;</span>
+            <img src="images/White Bentley.JPG" alt="">
+            <div class="form-wrapper-whitebentley">
+                <form action="#">
+                    <label for="name">Name*</label>
+                    <input placeholder="Your Name" class="full" type="text"id="name">
+                    <br>
+                    <label for="email">Email</label>
+                    <input placeholder="Your Email" class="full" type="text"id="name">
+                    <br>
+                    <label for="hire-start-date">Hire Start Date</label>
+                    <input type="date" id="depart">
+                    <br>
+                    <label for="hire-end-date">Hire End Date</label>
+                    <input type="date" id="depart">
+                    
+                    <br>
+                
+                    <button class="book-now">Book Now</button>
+                    
+                </form>
+                <div class="back-button">
+                    <button id="back-btn-whitebentley">Back</button>
+                </div>
+            </div>
+
+            <div id="car-info-whitebentley"> 
+                <img src="images/bentley logo.png" alt="" id="bentley-logo">
+                   <p>
+                    Bentayga is the first Bentley SUV - also the world's first true luxury SUV. Launched in 2015, Bentayga was named after the Roque Bentayga, on the island of Gran Cananria, Spain, and was designed, 
+                    engineered and crafted to offer unprecedented levels of refinement and performance. 
+                   </p>
+                <img src="images/car info.png" alt="" class="white-bentley-infoimg">
+                
+                    <h1>£800 PD <br>
+                        £4500 PW
+                    </h1>
+                
+                <button id="booking-button-whitebentley">Click Here to Book</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="bg-modal-bluesvr">
+        <div class="modal-content-bluesvr">
+            <span class="close-btn-bluesvr">&times;</span>
+            <img src="images/Blue SVR.JPG" alt="">
+            <div class="form-wrapper-bluesvr">
+                <form action="#">
+                    <label for="name">Name*</label>
+                    <input placeholder="Your Name" class="full" type="text"id="name">
+                    <br>
+                    <label for="email">Email</label>
+                    <input placeholder="Your Email" class="full" type="text"id="name">
+                    <br>
+                    <label for="hire-start-date">Hire Start Date</label>
+                    <input type="date" id="depart">
+                    <br>
+                    <label for="hire-end-date">Hire End Date</label>
+                    <input type="date" id="depart">
+                    
+                    <br>
+                
+                    <button class="book-now">Book Now</button>
+                    
+                </form>
+                <div class="back-button">
+                    <button id="back-btn-bluesvr">Back</button>
+                </div>
+            </div>
+
+            <div id="car-info-bluesvr"> 
+                <img src="images/range rover logo.png" alt="" id="rangelogo"> 
+                <p>
+                    Bentayga is the first Bentley SUV - also the world's first true luxury SUV. Launched in 2015, Bentayga was named after the Roque Bentayga, on the island of Gran Cananria, Spain, and was designed, 
+                    engineered and crafted to offer unprecedented levels of refinement and performance. 
+                   </p>
+                <img src="images/car info.png" alt="" class="bluesvr-infoimg">
+                
+                    <h1>£800 PD <br>
+                        £4500 PW
+                    </h1>
+                <button id="booking-button-bluesvr">Click Here to Book</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-modal-whites63">
+        <div class="modal-content-whites63">
+            <span class="close-btn-whites63">&times;</span>
+            <img src="images/White S63.JPG" alt="">
+            <div class="form-wrapper-whites63">
+                <form action="#">
+                    <label for="name">Name*</label>
+                    <input placeholder="Your Name" class="full" type="text"id="name">
+                    <br>
+                    <label for="email">Email</label>
+                    <input placeholder="Your Email" class="full" type="text"id="name">
+                    <br>
+                    <label for="hire-start-date">Hire Start Date</label>
+                    <input type="date" id="depart">
+                    <br>
+                    <label for="hire-end-date">Hire End Date</label>
+                    <input type="date" id="depart">
+                    
+                    <br>
+                
+                    <button class="book-now">Book Now</button>
+                    
+                </form>
+                <div class="back-button">
+                    <button id="back-btn-whites63">Back</button>
+                </div>
+            </div>
+
+            <div id="car-info-whites63">  
+                <img src="images/Mercedes-Logo.png" alt="" id="merclogo"> 
+                <p>
+                    Bentayga is the first Bentley SUV - also the world's first true luxury SUV. Launched in 2015, Bentayga was named after the Roque Bentayga, on the island of Gran Cananria, Spain, and was designed, 
+                    engineered and crafted to offer unprecedented levels of refinement and performance. 
+                   </p>
+                <img src="images/car info.png" alt="" class="whites63-infoimg">
+                
+                    <h1>£800 PD <br>
+                        £4500 PW
+                    </h1>
+                <button id="booking-button-whites63">Click Here to Book</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-modal-blackbentley">
+        <div class="modal-content-blackbentley">
+            <span class="close-btn-blackbentley">&times;</span>
+            <img src="images/Black Bentley.JPG" alt="">
+            <div class="form-wrapper-blackbentley">
+                <form action="#">
+                    <label for="name">Name*</label>
+                    <input placeholder="Your Name" class="full" type="text"id="name">
+                    <br>
+                    <label for="email">Email</label>
+                    <input placeholder="Your Email" class="full" type="text"id="name">
+                    <br>
+                    <label for="hire-start-date">Hire Start Date</label>
+                    <input type="date" id="depart">
+                    <br>
+                    <label for="hire-end-date">Hire End Date</label>
+                    <input type="date" id="depart">
+                    
+                    <br>
+                
+                    <button class="book-now">Book Now</button>
+                    
+                </form>
+                <div class="back-button">
+                    <button id="back-btn-blackbentley">Back</button>
+                </div>
+            </div>
+
+            <div id="car-info-blackbentley">  
+                <img src="images/bentley logo.png" alt="" id="bentley-logo2">
+                   <p>
+                    Bentayga is the first Bentley SUV - also the world's first true luxury SUV. Launched in 2015, Bentayga was named after the Roque Bentayga, on the island of Gran Cananria, Spain, and was designed, 
+                    engineered and crafted to offer unprecedented levels of refinement and performance. 
+                   </p>
+                <img src="images/car info.png" alt="" class="blackbentley-infoimg">
+                
+                    <h1>£800 PD <br>
+                        £4500 PW
+                    </h1>
+                <button id="booking-button-blackbentley">Click Here to Book</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-modal-whiterange">
+        <div class="modal-content-whiterange">
+            <span class="close-btn-whiterange">&times;</span>
+            <img src="images/White Range.JPG" alt="">
+            <div class="form-wrapper-whiterange">
+                <form action="#">
+                    <label for="name">Name*</label>
+                    <input placeholder="Your Name" class="full" type="text"id="name">
+                    <br>
+                    <label for="email">Email</label>
+                    <input placeholder="Your Email" class="full" type="text"id="name">
+                    <br>
+                    <label for="hire-start-date">Hire Start Date</label>
+                    <input type="date" id="depart">
+                    <br>
+                    <label for="hire-end-date">Hire End Date</label>
+                    <input type="date" id="depart">
+                    
+                    <br>
+                
+                    <button class="book-now">Book Now</button>
+                    
+                </form>
+                <div class="back-button">
+                    <button id="back-btn-whiterange">Back</button>
+                </div>
+            </div>
+
+            <div id="car-info-whiterange">  
+                <img src="images/range rover logo.png" alt="" id="rangelogo2"> 
+                <p>
+                    Bentayga is the first Bentley SUV - also the world's first true luxury SUV. Launched in 2015, Bentayga was named after the Roque Bentayga, on the island of Gran Cananria, Spain, and was designed, 
+                    engineered and crafted to offer unprecedented levels of refinement and performance. 
+                   </p>
+                <img src="images/car info.png" alt="" class="whiterange-infoimg">
+                
+                    <h1>£800 PD <br>
+                        £4500 PW
+                    </h1>
+                <button id="booking-button-whiterange">Click Here to Book</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-modal-orangebentley">
+        <div class="modal-content-orangebentley">
+            <span class="close-btn-orangebentley">&times;</span>
+            <img src="images/Orange bentley.JPG" alt="">
+            <div class="form-wrapper-orangebentley">
+                <form action="#">
+                    <label for="name">Name*</label>
+                    <input placeholder="Your Name" class="full" type="text"id="name">
+                    <br>
+                    <label for="email">Email</label>
+                    <input placeholder="Your Email" class="full" type="text"id="name">
+                    <br>
+                    <label for="hire-start-date">Hire Start Date</label>
+                    <input type="date" id="depart">
+                    <br>
+                    <label for="hire-end-date">Hire End Date</label>
+                    <input type="date" id="depart">
+                    
+                    <br>
+                
+                    <button class="book-now">Book Now</button>
+                    
+                </form>
+                <div class="back-button">
+                    <button id="back-btn-orangebentley">Back</button>
+                </div>
+            </div>
+
+            <div id="car-info-orangebentley">  
+                <img src="images/bentley logo.png" alt="" id="bentley-logo3"> 
+                <p>
+                    Bentayga is the first Bentley SUV - also the world's first true luxury SUV. Launched in 2015, Bentayga was named after the Roque Bentayga, on the island of Gran Cananria, Spain, and was designed, 
+                    engineered and crafted to offer unprecedented levels of refinement and performance. 
+                   </p>
+                <img src="images/car info.png" alt="" class="orangebentley-infoimg">
+                
+                    <h1>£800 PD <br>
+                        £4500 PW
+                    </h1>
+                <button id="booking-button-orangebentley">Click Here to Book</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Form & Calendar-->
+
+    
+
+<!--TESTIMONIALS & PARTNERS-->
+
+    <section class="testimonials">
+        <div class="partners">
+            <h1>OUR PARTNERS</h1>
+            <img src="images/Partners logo.png" alt="">
+        </div>
+        <!-- Testimonial container 
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-text-box">
+                    <p>The Bentley was amazing! I cant wait to drive  again</p>
+                    <i class="icon ion-md-quote"></i>
+                </div>
+                <div class="testimonial-customer">
+                    <img src="images/profile-pic.jpg" alt="">
+                    <h1>Martin H</h1>
+                </div>
+            </div>
+        </div>
+        -->
+    </section>
+<!--FOOTER PARAGRAPH-->
+    <section class="footer">
+
+        <div class="container">
+            <div class="title-heading">
+                <h3>Let the</h3>
+                <h1>Adventure Begin</h1>
+        </div>
+            
+            <div class="footer-grid">
+                <!--Adveture grid item #2-->
+                <div class="footer-grid-item">
+                    <p>    
+                    Here at Luxury Cars with our long serving and trustworthy family friendly chauffeurs we have the ability and the capacity to transport not just your immediate family 
+                    but your entire extended family as well if necessary! With our child and family friendly transportation options you can choose our Rolls Royce Ghost for 3 or 4 passengers.     
+                    Our Mercedes V Class for luxury family travel with room for up to 7 passengers, their suitcases and a buggy plus child or baby seats fitted at no extra cost. 
+                </p>
+                </div>
+                <!--Adveture grid item #2-->
+                <div class="footer-grid-item">
+                    <p>
+                    We can also cater for larger groups with our luxury coach service ideal for full family airport transfers, weddings, reunions, and other family events. 
+                    Here the children, parents, grandparents and everyone else in the family can enjoy travelling together! Our smaller coaches are ideal for up to 16 passengers and 12 suitcases. 
+                    We also supply larger coaches too.
+                    </p>
+                </div>
+
+            </div>
+            <a class="btn" href="ourcars.html">Book your dream car</a>
+        </div>
+    </section>
+
+
+
+</main>
+
+<footer>
+    <p>&copy; 2020 All Rights Reserved. </p>
+</footer>
+
+    
+    <script type="text/javascript" src="luxurycars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({easing: 'ease', duration: 1800});</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>

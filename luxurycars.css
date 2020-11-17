@@ -1,0 +1,1484 @@
+/* CONTENT 
+
+- Style Page for Home Page (Index) - Line 50
+- Style Page for Our Cars - Line 912
+
+
+
+
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.back-to-main{
+    position: absolute;
+    left: 4rem;
+    top: 0rem;
+    margin-top: 3.5rem;
+    background-color: ivory;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'nunito';
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+
+}
+
+ul {
+
+    list-style: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+
+
+/* HEADER */
+
+header{ 
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.container{
+    width: 100%;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.websitelogo{
+    width: 30rem;
+    position: relative;
+    left: -5rem;
+
+
+}
+
+.menu-icons i{
+    font-size: 3.5rem;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.close i{
+    color: #eb648c;
+}
+
+.nav-list{
+    width: 25rem;
+    height: 100vh;
+    background-color: #d7d4ed;
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-list.active{
+    right: 0;
+
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.nav-item{
+    margin: 1.5rem 0;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.7);
+}
+
+/* OPENING PARAGRPH */
+
+.opening-paragraph{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(177, 177, 177, 0.8) 0%), url("images/London\ Skyline.jpg")
+    center no-repeat;
+    background-size: fit;
+    position: relative;
+    bottom: 2.5rem;
+    
+}
+
+.opening-paragraph::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4.7rem;
+    background: url("images/wave-small.png") center no-repeat;
+    background-size: cover;
+}
+
+.main-message{
+    width: 100%;
+    max-width: 50rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform: translateY(20%);
+}
+
+.main-message h3{
+    font-size: 1.6rem;
+}
+
+.main-message h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+/* Animation Sequence */
+.main-message h1:before{
+    content: '';
+    animation: animate infinite 10s;
+    margin-right: 1rem;
+    
+}
+
+@keyframes animate{
+    0%{
+        content: 'Adventure';
+        opacity: 0%;
+    }
+    5%{
+        content: 'Adventure';
+        opacity: 100%;
+    }
+    10%{
+        content: 'Adventure';
+        opacity: 100%;
+    }
+    15%{
+        content: 'Adventure';
+        opacity: 100%;
+    }
+    20%{
+        content: 'Adventure';
+        opacity: 0%;
+    }
+    25%{
+        content: 'Luxury';
+        opacity: 0%;
+    }
+    30%{
+        content: 'Luxury';
+        opacity: 100%;
+    }
+    35%{
+        content: 'Luxury';
+        opacity: 100%;
+    }
+    40%{
+        content: 'Luxury';
+        opacity: 0%;
+    }
+    45%{
+        content: 'Excitement';
+        opacity: 0%;
+    }
+    50%{
+        content: 'Excitement';
+        opacity: 100%;
+    }
+    55%{
+        content: 'Excitement';
+        opacity: 100%;
+    }
+    60%{
+        content: 'Excitement';
+        opacity: 0%;
+    }
+    65%{
+        content: 'Comfort';
+        opacity: 0%;
+    }
+    70%{
+        content: 'Comfort';
+        opacity: 100%;
+    }
+    75%{
+        content: 'Comfort';
+        opacity: 100%;
+    }
+    80%{
+        content: 'Comfort';
+        opacity: 0%;
+    }
+    85%{
+        content: 'Royalty';
+        opacity: 0%;
+    }
+    90%{
+        content: 'Royalty';
+        opacity: 100%;
+    }
+    95%{
+        content: 'Royalty';
+        opacity: 100%;
+    }
+    100%{
+        content: 'Royalty';
+        opacity: 0%;
+    }
+}
+
+.main-message p{
+    text-transform: none;
+}
+
+.btn{
+    background-color: #eb648c;
+    border-radius: 2rem;
+    color: #fafafa;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+}
+
+.btn:hover{
+    background-color: #2f00ff;
+
+}
+
+
+/* CAR GRID CONTAINER & ITEMS*/
+
+.car-grid-container{
+    padding: 0;
+}
+
+.title-heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0,0,0,.7);
+}
+
+.title-heading h3{
+    font-size: 1.4rem;
+}
+
+.title-heading h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    margin: .5rem 0 1rem;
+}
+
+.title-heading p{
+    text-transform: none;
+}
+
+.car-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+
+}
+
+
+
+.car-grid-item i{
+    font-size: 5rem;
+    color: #eb648c;
+}
+
+.car-grid-item h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+
+}
+
+
+/*TESTIMONIALS*/
+
+.testimonials{
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(177, 177, 177, 0.8) 100%), url("images/London\ Skyline.jpg")
+    center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.partners{
+    position: relative;
+    width: 60rem;
+    top: 30rem;
+    left: 66rem;
+}
+
+.partners h1{
+    position: relative;
+    font-family: 'aldrich', sans-serif;
+    right: 1rem;
+    bottom: 7rem;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.testimonials::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 4.7rem;
+    background: url("images/wave-small-reversed.png") center no-repeat;
+    background-size: cover;
+}
+
+.testimonial{
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.testimonial-text-box{
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.testimonial-text-box i{
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: #eb648c;
+    opacity: -5;
+    z-index: -1;
+}
+
+.testimonial-customer img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid #838383;
+
+}
+
+/* FOOTER GRID */
+
+.footer{
+    position: relative;
+    top: 12rem;
+    margin-bottom: 15rem;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-grid-item p{
+    color: rgba(0,0,0,0,7);
+
+
+}
+
+footer{
+    padding: 2.5rem;
+    background-color: #d7d4ed;
+    text-align: center;
+    color: rgba(0,0,0,0,7);
+
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (min-width: 350px){
+    .main-message{
+        transform: translateY(40%);
+    }
+}
+
+@media screen and (min-width: 470px){
+    .opening-paragraph::before{
+        height: 9.4rem;
+        background: url("images/wave-medium.png");
+        background-size: cover;
+
+    }
+
+    
+    .testimonials::before{
+        height: 9.4rem;
+        background: url("images/wave-medium-reversed.png");
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 700px){
+    header{
+        height: 8rem;
+    }
+    .websitelogo{
+        width: 30rem;
+    }
+
+    .nav-list{
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+    }
+    
+    .menu-icons{
+        display: none;
+    }
+
+    .nav-item{
+        margin: 0 2.5rem;
+    }
+
+    .nav-link, 
+    .current{
+        color: #fafafa;
+        position: relative;
+        font-size: 1.3rem;
+
+    }
+
+    .nav-link::before,
+    .current::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        background-color: #eb648c;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 650ms;
+    }
+
+    .current::before{
+        transform: scaleX(1);
+
+    }
+
+    .nav-link:hover::before{
+        transform: scaleX(1);
+
+    }
+
+    .hero{
+        height: 60vh;
+    }
+
+    .main-message{
+        transform: translateY(50%);
+    }
+
+    .title-heading h1{
+        font-size: 2.5rem;
+
+    }
+
+
+}
+
+@media screen and (min-width: 950px){
+
+    .opening-paragraph::before{
+        height: 22.7rem;
+        background: url("images/wave-large.png");
+        background-size: cover;
+
+    }
+
+    
+    .testimonials::before{
+        height: 22.7rem;
+        background: url("images/wave-large-reversed.png");
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .opening-paragraph{
+        height: 75vh;
+    }
+}
+
+/* POP UP BOXES*/
+
+/* White Bentley ---------------------------------------------*/
+
+.bg-modal-whitebentley{
+
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.modal-content-whitebentley{
+    width: 150rem;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: 1.5s;
+    position: relative;
+    
+}
+
+.modal-content-whitebentley:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px black;
+    z-index: 100;
+}
+
+.modal-content-whitebentley img{
+    object-fit: contain;
+    width: 45%;
+    height: fit-content;
+    position: relative;
+    top: 5px;
+    left: 75px;
+
+}
+
+.close-btn-whitebentley{
+    position: absolute;
+    top: 1;
+    left: 1450px;
+    font-size: 40px;
+    opacity: 30%;
+    cursor: pointer;
+}
+
+.white-bentley-information img{
+    position: relative;
+    top: -70rem;
+    left: 83rem;
+    height: 20rem;
+    width: auto;
+}
+
+/* Blue SVR ---------------------------------------------*/
+
+.bg-modal-bluesvr{
+
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.modal-content-bluesvr{
+    width: 150rem;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: 1.5s;
+    position: relative;
+    
+}
+
+.modal-content-bluesvr:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px black;
+    z-index: 100;
+}
+
+.modal-content-bluesvr img{
+    object-fit: contain;
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    top: 120px;
+    left: 75px;
+
+}
+
+.close-btn-bluesvr{
+    position: absolute;
+    top: 1;
+    left: 1450px;
+    font-size: 40px;
+    opacity: 30%;
+    cursor: pointer;
+}
+
+/* White S63 ---------------------------------------------*/
+
+.bg-modal-whites63{
+
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.modal-content-whites63{
+    width: 150rem;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: 1.5s;
+    position: relative;
+    
+}
+
+.modal-content-whites63:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px black;
+    z-index: 100;
+}
+
+.modal-content-whites63 img{
+    object-fit: contain;
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    top: 120px;
+    left: 75px;
+
+}
+
+.close-btn-whites63{
+    position: absolute;
+    top: 1;
+    left: 1450px;
+    font-size: 40px;
+    opacity: 30%;
+    cursor: pointer;
+}
+
+/* Black Bentley ------------------------------------------*/
+
+.bg-modal-blackbentley{
+
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.modal-content-blackbentley{
+    width: 150rem;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: 1.5s;
+    position: relative;
+    
+}
+
+.modal-content-blackbentley:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px black;
+    z-index: 100;
+}
+
+.modal-content-blackbentley img{
+    object-fit: contain;
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    top: 10px;
+    left: 75px;
+
+}
+
+.close-btn-blackbentley{
+    position: absolute;
+    top: 1;
+    left: 1450px;
+    font-size: 40px;
+    opacity: 30%;
+    cursor: pointer;
+}
+
+/* White Range ------------------------------------------*/
+
+.bg-modal-whiterange{
+
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.modal-content-whiterange{
+    width: 150rem;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: 1.5s;
+    position: relative;
+    
+}
+
+.modal-content-whiterange:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px black;
+    z-index: 100;
+}
+
+.modal-content-whiterange img{
+    object-fit: contain;
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    top: 10px;
+    left: 75px;
+
+}
+
+.close-btn-whiterange{
+    position: absolute;
+    top: 1;
+    left: 1450px;
+    font-size: 40px;
+    opacity: 30%;
+    cursor: pointer;
+}
+
+/* Orange Bentley ------------------------------------------*/
+
+.bg-modal-orangebentley{
+
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.modal-content-orangebentley{
+    width: 150rem;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transition: 1.5s;
+    position: relative;
+    
+}
+
+.modal-content-orangebentley:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px black;
+    z-index: 100;
+}
+
+.modal-content-orangebentley img{
+    object-fit: contain;
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    top: 10px;
+    left: 75px;
+
+}
+
+.close-btn-orangebentley{
+    position: absolute;
+    top: 1;
+    left: 1450px;
+    font-size: 40px;
+    opacity: 30%;
+    cursor: pointer;
+}
+
+/* THIS IS FOR THE HOVER EFFECT OVER PICS (LINK IT WITH THE 
+.modal-content:before{
+    content: '.modal-content';
+    animation: animate  10s;
+    margin-right: 1rem;
+    
+}
+
+@keyframes animate{
+    0%{
+        content: 'modal-content';
+        opacity: 0%;
+        width: 50rem;
+        height: 300px;
+    }
+    100%{
+        content: '.modal-content';
+        opacity: 100%;
+        width: 100rem;
+        height: 300px;
+    }
+    
+}
+
+/* CSS For Our Cars page */
+/* ////////////////////////////////////////////////////////////////////////////////*/
+/* STYLE FOR PAGE "OUR CARS" */
+
+.car-grid-ourcars{
+    position: relative;
+    right: 25rem;
+    display: flex;
+    width: 180rem;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    bottom: 10rem;
+
+
+}
+
+.car-grid-item i{
+    font-size: 5rem;
+    color: #eb648c;
+}
+
+.car-grid-item h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+
+}
+
+.our-cars{
+    width: 80rem; 
+    transition: 1.5s;
+    overflow: hidden;
+}
+
+.our-cars:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+
+/* This animation works but stops working? */
+
+.opening-paragraph-ourcars{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(177, 177, 177, 0.8) 0%), url("images/London\ Skyline.jpg")
+    center no-repeat;
+    background-size: fit;
+    position: relative;
+    bottom: 2.5rem;
+    
+}
+
+.opening-paragraph-ourcars::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4.7rem;
+    background: url("images/wave-small.png") center no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 470px){
+    .opening-paragraph-ourcars::before{
+        height: 9.4rem;
+        background: url("images/wave-medium.png");
+        background-size: cover;
+    }
+
+    .car-grid-container-ourcars{
+        padding: 0;
+        position: relative;
+        top: 0.5rem;
+    }
+
+
+}
+
+@media screen and (min-width: 950px){
+
+    .opening-paragraph-ourcars::before{
+        height: 22.7rem;
+        background: url("images/wave-large.png");
+        background-size: cover;
+
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .opening-paragraph-ourcars{
+        height: 45vh;
+    }
+}
+
+.car-grid-container-ourcars{
+    padding: 0;
+    position: relative;
+    bottom: 10rem;
+}
+
+.all-cars{
+    width: 100rem;
+    height: 4rem;
+    left: 13rem;
+    position: relative;
+    bottom: 10rem;
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(233, 233, 233, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.all-cars:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+/* Form Button and Styles - Below are individual styles for each popup box when user clicks on the image */
+
+
+label, input {
+    display: block;
+    width: 45rem;
+    font-size: 1.4rem;
+    padding: 1rem;
+    
+}
+
+label {
+    margin-bottom: -5px;
+}
+
+.book-now{
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 31rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    position: relative;
+    left: 14rem;
+}
+
+
+/* Car Information for White Bentley */
+
+.form-wrapper-whitebentley{
+    position: relative;
+    width: 500px;
+    left: 90rem;
+    bottom: 61rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+
+}
+
+#car-info-whitebentley{
+    position: relative;
+    height: 700px;
+    width: 510px;
+    left: 89.5rem;
+    bottom: 121rem;
+    padding: 2rem;
+    
+    opacity: 100;
+    background-color: white;
+    z-index: 23;
+
+}
+
+#booking-button-whitebentley{
+    position: relative;
+    top: 7rem;
+    padding: 1rem;
+    width: 45rem;
+    left: 1rem;
+    
+}
+
+#back-btn-whitebentley{
+    position: relative;
+    z-index: 22;
+    bottom: 3.9rem;
+    padding: 1rem;
+    width: 13rem;
+    
+}
+
+.white-bentley-infoimg{
+    position: relative;
+    transform: scale(2);
+    margin-left: 5.9rem;
+    margin-top: -3rem;
+}
+
+#bentley-logo{
+    position: relative;;
+    bottom: 4rem;
+    margin: 6rem;
+    margin-bottom: -25rem;
+    margin-top: -25rem;
+    transform: scale(1.7);
+}
+
+#car-info-whitebentley h1{
+    font-size: 4em;
+    font-family: 'Aldrich', sans-serif;
+    position: relative;
+    left: 0.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 1rem;
+}
+
+
+
+/* Car Information for Blue SVR */
+
+.form-wrapper-bluesvr{
+    position: relative;
+    width: 500px;
+    left: 90rem;
+    bottom: 37rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+#car-info-bluesvr{
+    position: relative;
+    height: 700px;
+    width: 510px;
+    left: 89.5rem;
+    bottom: 95.5rem;
+    padding: 2rem;
+    opacity: 100;
+    background-color: white;
+    z-index: 23;
+    
+
+}
+
+#booking-button-bluesvr{
+    position: relative;
+    top: 10rem;
+    padding: 1rem;
+    width: 45rem;
+    left: 1rem;
+    
+}
+
+#back-btn-bluesvr{
+    position: relative;
+    z-index: 22;
+    bottom: 3.9rem;
+    padding: 1rem;
+    width: 13rem;
+    
+}
+
+.bluesvr-infoimg{
+    position: relative;
+    transform: scale(2);
+    margin-left: 5.9rem;
+    margin-top: -15rem;
+    margin-bottom: 10rem;
+}
+
+#rangelogo{
+    position: relative;
+    margin-bottom: -40rem;
+    margin-top: -65rem;
+    left: 12rem;
+}
+
+#car-info-bluesvr h1{
+    font-size: 4em;
+    font-family: 'Aldrich', sans-serif;
+    position: relative;
+    left: 0.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 1rem;
+}
+
+/* Car information for White S63 */
+
+.form-wrapper-whites63{
+    position: relative;
+    width: 500px;
+    left: 90rem;
+    bottom: 37rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+#car-info-whites63{
+    position: relative;
+    height: 700px;
+    width: 510px;
+    left: 89.5rem;
+    bottom: 95.5rem;
+    padding: 2rem;
+
+    opacity: 100;
+    background-color: white;
+    z-index: 23;
+
+}
+
+#booking-button-whites63{
+    position: relative;
+    top: 8rem;
+    padding: 1rem;
+    width: 45rem;
+    left: 1rem;
+    
+}
+
+#back-btn-whites63{
+    position: relative;
+    z-index: 22;
+    bottom: 3.9rem;
+    padding: 1rem;
+    width: 13rem;
+    
+}
+
+.whites63-infoimg{
+    position: relative;
+    transform: scale(2);
+    margin-left: 5.9rem;
+    margin-top: -15rem;
+    margin-bottom: 10rem;
+}
+
+#merclogo{
+    position: relative;
+    left: 12rem;
+    top: -17rem;
+    transform: scale(1.7);
+    margin-bottom: -30rem;
+}
+
+#car-info-whites63 h1{
+    font-size: 4em;
+    font-family: 'Aldrich', sans-serif;
+    position: relative;
+    left: 0.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 1rem;
+}
+
+/* Car information for Black Bentley */
+
+.form-wrapper-blackbentley{
+    position: relative;
+    width: 500px;
+    left: 90rem;
+    bottom: 61.5rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+#car-info-blackbentley{
+    position: relative;
+    height: 700px;
+    width: 510px;
+    left: 89.5rem;
+    bottom: 123rem;
+    padding: 2rem;
+    opacity: 100;
+    background-color: white;
+    z-index: 23;
+
+}
+
+#booking-button-blackbentley{
+    position: relative;
+    top: 9rem;
+    padding: 1rem;
+    width: 45rem;
+    left: 1rem;
+    
+}
+
+#back-btn-blackbentley{
+    position: relative;
+    z-index: 22;
+    bottom: 3.9rem;
+    padding: 1rem;
+    width: 13rem;
+    
+}
+
+.blackbentley-infoimg{
+    position: relative;
+    transform: scale(2);
+    margin-left: 4.5rem;
+    margin-top: -5rem;
+}
+
+#bentley-logo2{
+    position: relative;
+    left: 12rem;
+    top: -25rem;
+    transform: scale(1.7);
+    margin-bottom: -50rem;
+}
+
+#car-info-blackbentley h1{
+    font-size: 4em;
+    font-family: 'Aldrich', sans-serif;
+    position: relative;
+    left: 0.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 1rem;
+}
+
+/* Car information for White Range */
+
+.form-wrapper-whiterange{
+    position: relative;
+    width: 500px;
+    left: 90rem;
+    bottom: 61.5rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+#car-info-whiterange{
+    position: relative;
+    height: 700px;
+    width: 510px;
+    left: 89.5rem;
+    bottom: 122rem;
+    padding: 2rem;
+    opacity: 100;
+    background-color: white;
+    z-index: 23;
+
+}
+
+#booking-button-whiterange{
+    position: relative;
+    top: 9rem;
+    padding: 1rem;
+    width: 45rem;
+    left: 1rem;
+    
+}
+
+#back-btn-whiterange{
+    position: relative;
+    z-index: 22;
+    bottom: 3.9rem;
+    padding: 1rem;
+    width: 13rem;
+    
+}
+
+.whiterange-infoimg{
+    position: relative;
+    transform: scale(2);
+    margin-left: 5.9rem;
+    margin-top: -4rem;
+}
+
+#rangelogo2{
+    position: relative;
+    margin-bottom: -50rem;
+    margin-top: -55rem;
+    left: 12rem;
+}
+
+#car-info-whiterange h1{
+    font-size: 4em;
+    font-family: 'Aldrich', sans-serif;
+    position: relative;
+    left: 0.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 1rem;
+}
+
+/* Car information for Orange Bentley */
+
+.form-wrapper-orangebentley{
+    position: relative;
+    width: 500px;
+    left: 90rem;
+    bottom: 61.5rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+#car-info-orangebentley{
+    position: relative;
+    height: 700px;
+    width: 510px;
+    left: 89.5rem;
+    bottom: 122rem;
+    padding: 2rem;
+    opacity: 100;
+    background-color: white;
+    z-index: 23;
+
+}
+
+#booking-button-orangebentley{
+    position: relative;
+    top: 9rem;
+    padding: 1rem;
+    width: 45rem;
+    left: 1rem;
+    
+}
+
+#back-btn-orangebentley{
+    position: relative;
+    z-index: 22;
+    bottom: 3.9rem;
+    padding: 1rem;
+    width: 13rem;
+    
+}
+
+.orangebentley-infoimg{
+    position: relative;
+    transform: scale(2);
+    margin-left: 4.5rem;
+    margin-top: -5rem;
+}
+
+#bentley-logo3{
+    position: relative;
+    left: 12rem;
+    top: -25rem;
+    transform: scale(1.7);
+    margin-bottom: -50rem;
+}
+
+#car-info-orangebentley h1{
+    font-size: 4em;
+    font-family: 'Aldrich', sans-serif;
+    position: relative;
+    left: 0.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 1rem;
+}
