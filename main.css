@@ -152,6 +152,7 @@ li{
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .top-nav.open{
@@ -224,6 +225,7 @@ li{
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     padding: 1rem;
     user-select: none;
     
