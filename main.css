@@ -407,7 +407,7 @@ margin-right: auto;
 
 
 .timeline ul{
-    border-left: 4px solid #ffe838;
+    border-left: 4px solid #f8e029;
     border-radius: .8rem;
     background-color: rgba(0,0,0,0,05);
     margin: 0 auto;
@@ -462,6 +462,12 @@ margin-right: auto;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #313534;
+}
+
+.timeline p{
+    padding: 5rem;
+    position: relative;
+    right: 5rem;
 }
 
 /*End CV*/
@@ -691,5 +697,11 @@ li{
 
     .up {
         right: 2rem;
+    }
+
+    .portfolio-img {
+        flex: 1;
+        margin-right: -1rem;
+        
     }
 }
