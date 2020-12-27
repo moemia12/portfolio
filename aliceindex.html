@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>TheAliceProject</title>
+</head>
+<body>
+    
+    <main>
+        <div class="overlay-background"></div>
+        <div class="main-container">
+            <div class="viewport">
+                <form class="gender-buttons" id="gender-buttons">
+                    <input class="gender-button" type="radio" name="tools" id="tool-1" value="0.55" checked>
+                    <label class="for-gender-button" for="tool-1">Male</label>
+                    <input class="gender-button" type="radio" name="tools" id="tool-2" value="0.68" checked>
+                    <label class="for-gender-button" for="tool-2">Female</label>
+                </form>
+                <div class="weight-input" >
+                    <h3>ENTER WEIGHT</h3>
+                    <input id="weight-input" type="number" placeholder="75kg" required>
+                </div>
+                <div class="alcohol-content" >
+                    <h3>AMOUNT OF DRINKS</h3>
+                    <input id="alcohol-content" type="number" placeholder="5" required>
+                </div>
+                <div class="alcohol-type">
+                    <h3>TYPE OF DRINKS</h3>
+                    <select name="type-of-alcohol" id="alcohol-type">
+                        <option value="1">Shots of Spirits</option>
+                        <option value="1">Glasses of Wine</option>
+                        <option value="1">Pints of Beer</option>
+                    </select>
+                </div>
+                <div class="elapsed-time">
+                    <h3>ELAPSED TIME</h3>
+                    <input id = "elapsed-time" type="number" placeholder="2 hours ago" required>
+                </div>
+                <div class="submit-button" >
+                    <input type="submit" id="submit-button">
+                </div>
+                <div class="result-container" id="result-container">
+                    <h5>YOUR BAC IS</h5>
+                </div>
+                <div class="sober-clock" id="sober-clock">
+                    <h5>TIME TILL SOBER</h5>
+                </div>
+                <div class="bac-info">
+                    <div class="rating-bar">
+                    <h1>- 0.00</h1>
+                    <br>
+                    <br>
+                    <h1>- 0.15</h1>
+                    <br>
+                    <br>
+                    <h1>- 0.30</h1>
+                    <br>
+                    <br>
+                    <h1>- 0.45</h1>
+                    </div>
+                    <h1>Blood Alcohol Content Guidance</h1>
+                    <p>0.00 - 0.05.......................... "Buzz Zone"</p>
+                    <br>
+                    <p>0.06 - 0.11........................... Drunk Zone</p>
+                    <br>
+                    <p>0.12 - 0.15............... Elavated Risk Zone</p>
+                    <br>
+                    <p>0.16 - 0.25..................... High Risk Zone</p>
+                    <br>
+                    <p>0.25 - 0.45+... Medical Emergency Zone</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+</html>
