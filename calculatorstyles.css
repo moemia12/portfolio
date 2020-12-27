@@ -11,6 +11,17 @@ body{
     background: linear-gradient(to right, #00AAFF, #260258);
 }
 
+.back-to-main{
+    position: absolute;
+    left: 4rem;
+    top: 0rem;
+    margin-top: 3.5rem;
+    background-color: ivory;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'nunito';
+}
+
 .calculator-grid{
     display: grid;
     justify-content: center;
