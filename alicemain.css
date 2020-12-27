@@ -9,8 +9,7 @@ body {
     height: auto;
     padding: 0;
     margin: 0;
-    background: rgb(148,0,205);
-background: linear-gradient(90deg, rgba(148,0,205,1) 0%, rgba(73,10,92,1) 50%, rgba(162,0,255,1) 100%);
+    background: radial-gradient(circle, rgba(45,45,45,1) 0%, rgb(32, 32, 32) 50%, rgba(45,45,45,1) 100%);
  
 
 }
@@ -33,53 +32,10 @@ background: linear-gradient(90deg, rgba(148,0,205,1) 0%, rgba(73,10,92,1) 50%, r
     left: 20rem;
     top: 5rem;
     border-radius: 3%;
-    background: linear-gradient(0deg, rgb(179, 86, 255) 0%, rgba(255,255,255,1) 50%, rgb(232, 204, 255) 100%);
+    background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 100%);
     box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 1px 10px rgba(192, 192, 192, 0.66);
 
-}
-
-.male-button{
-
-    position: relative;
-    height: 5rem;
-    width: 11rem;
-    top: 3rem;
-    left: 3rem;
-    border-radius: 5%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 5rem;
-    background-color: rgb(255, 255, 255);
-}
-
-.female-button{
-
-    position: relative;
-    height: 5rem;
-    width: 11rem;
-    top: 3rem;
-    left: 5rem;
-    border-radius: 5%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 5rem;
-    background-color: rgb(255, 255, 255);
-}
-
-.male-button:hover{
-    background-color: rgb(88, 77, 255);
-}
-
-.female-button:hover{
-    background-color: rgb(255, 70, 255);
-}
-
-.male-button:focus{
-    background-color: blue;
-}
-
-.female-button:focus{
-    background-color:red;
 }
 
 .gender-buttons{
@@ -122,10 +78,16 @@ background: linear-gradient(90deg, rgba(148,0,205,1) 0%, rgba(73,10,92,1) 50%, r
 	background-color: var(--dark-light);
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
-.gender-button:checked + label{
-	background-color: rgb(231, 169, 255);
+#tool-1:checked + label {
+	background-color: rgb(173, 218, 255);
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
+#tool-2:checked + label {
+	background-color: rgb(255, 128, 244);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .gender-button:not(:checked) + label:hover{
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -221,9 +183,10 @@ background: linear-gradient(90deg, rgba(148,0,205,1) 0%, rgba(73,10,92,1) 50%, r
     width: 25rem;
     text-align: center;
     line-height: 15rem;
-    background: linear-gradient(0deg, rgb(197, 126, 255) 0%, rgba(255,255,255,1) 50%, rgb(232, 204, 255) 100%);
+    background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 100%);
     font-size: 60px;
     box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 1px 10px rgba(192, 192, 192, 0.66);
 }
 
 .result-container h5{
@@ -242,9 +205,10 @@ background: linear-gradient(90deg, rgba(148,0,205,1) 0%, rgba(73,10,92,1) 50%, r
     width: 25rem;
     text-align: center;
     line-height: 15rem;
-    background: linear-gradient(0deg, rgb(197, 126, 255) 0%, rgba(255,255,255,1) 50%, rgb(232, 204, 255) 100%);
+    background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 100%);
     font-size: 35px;
     box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 1px 10px rgba(192, 192, 192, 0.66);
 }
 
 .sober-clock h5{
@@ -269,11 +233,12 @@ background: linear-gradient(90deg, rgba(148,0,205,1) 0%, rgba(73,10,92,1) 50%, r
 .bac-info{
     position: relative;
     width: 51rem;
-    height: 33.5rem;
+    height: 32.5rem;
     bottom: 51.5rem;
     left: 34rem;
-    background: linear-gradient(0deg, rgb(179, 86, 255) 0%, rgba(255,255,255,1) 50%, rgb(232, 204, 255) 100%);
+    background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 100%);
     box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 1px 10px rgba(192, 192, 192, 0.66);
     border-radius: 3%;
 }
 
