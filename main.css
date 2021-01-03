@@ -386,7 +386,7 @@ margin-right: auto;
     opacity: 0.3;
 }
 
-.portfolio-description .cta{
+.cta{
     display: inline-block;
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -396,9 +396,10 @@ margin-right: auto;
     margin-right: rem;
 }
 
-.portfolio-description .cta:hover{
+.cta:hover{
     color: #2f67cd;
 }
+
 
 
 /*End Portfolio*/
