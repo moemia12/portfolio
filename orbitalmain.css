@@ -1,0 +1,171 @@
+
+  /*Start global*/
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    src:url(fonts/Roboto-Medium.ttf);
+    font-family: "Roboto";
+
+}
+
+.back-to-main{
+    position: absolute;
+    left: 4rem;
+    top: 0rem;
+    margin-top: 3.5rem;
+    background-color: ivory;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'nunito';
+}
+
+html {
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    color: #eee;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24, 24, 24);
+}
+
+.planet-container {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    background-color: rgb(30,30,30);
+    bottom: 35rem;
+    left: 10rem;   
+    overflow: hidden;
+    
+}
+
+.planet-container img{
+    height: 40rem;
+    display: none;
+}
+
+#active-planet{
+    height: 40rem;
+    display: flex;
+}
+
+.answer-container{
+    position: relative;
+    left: 140rem;
+    bottom: 25rem;
+    background-color: rgb(30,30,30);
+    width: 40rem;
+    height: 40rem;
+    margin-bottom: -30rem;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 80px;
+    overflow-wrap:break-word;
+    word-wrap: break-word;
+}
+
+.answer-container h3{
+    font-size: 40px;
+    position: absolute;
+    top: 20rem;
+    left: 8rem;
+    
+}
+
+#answer-div{
+    position: relative;
+    top: 10rem;
+}
+
+
+.object-container{
+        position: relative;
+        left: 75rem;
+        top: 15rem;
+        background-color: rgb(30,30,30);
+        width: 40rem;
+        height: 40rem;
+}
+
+.icon-container p{
+    font-size: 50px;
+    position: relative;
+    top: 22rem;
+    right: 22rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+.icon-container i{
+    display: none;
+}
+
+.arrow-buttons{
+    position: fixed;
+    top: 30rem;
+    z-index: 100;
+}
+
+.left-arrow, .right-arrow{
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+    float: left;
+    box-shadow: -2px 2px 0 rgba(255, 241, 241, 0.5);
+    cursor: pointer;
+
+}
+
+.left-arrow:hover, 
+.right-arrow:hover{
+    transition: .5s;
+    float: left;
+    box-shadow: -2px 2px 0 rgb(255, 255, 255);
+}
+
+
+.left-arrow{
+    transform: rotate(45deg);
+    position: relative;
+    right: 10rem;
+    top: 4rem;
+}
+.right-arrow{
+    transform: rotate(225deg);
+    position: relative;
+    left: 40rem;
+    top: 4rem;
+}
+
+
+#active{
+    z-index: 10;
+    display: flex;
+    font-size: 200px;
+    position: relative;
+    left: 9rem;
+    top: 10rem;
+
+}
+
+.info-container{
+    width: 80rem;
+    height: 20rem;
+    padding: 5rem;
+    position: relative;
+    bottom: 25rem;
+    left: 55rem;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(30,30,30);
+
+}
+
+
+
