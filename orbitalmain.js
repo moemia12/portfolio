@@ -14,7 +14,7 @@ function adjustActivePlanet(adjustment) {
 
   if (nextIndex < 0) nextIndex = planetImgs.length - 1;
   current.removeAttribute('id');
-  planetImgs[nextIndex].id = 'active-planet';
+  planetImgs[nextIndex].id = 'active-planet'; 
 
   adjustOrbitalPeriod();
 
