@@ -41,6 +41,8 @@ p{
 img{
     width: 100%;
 }
+
+
 /*End global*/
 
 /*Start reusable*/
@@ -234,8 +236,14 @@ li{
 .landing-text h6{
     font-size: 2rem;
     font-weight: 400;
-
 }
+
+.techstack{
+    position: relative;
+    top: 5rem;
+    font-size: rem;
+   
+   }
 
 
 /*End header*/
