@@ -47,6 +47,14 @@ img{
 
 /*Start reusable*/
 
+.techstack i{
+    position: relative;
+    top: 5rem;
+    font-size: 3rem;
+    margin: 0.5rem;
+
+}
+
 .container{
     width: 90%;
     max-width: 120rem;
